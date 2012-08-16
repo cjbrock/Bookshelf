@@ -4,6 +4,6 @@ class Author < ActiveRecord::Base
   has_many :book_authors
   has_many :books, :through => :book_authors
 
-    accepts_nested_attributes_for :book_authors, allow_destroy: true
+  accepts_nested_attributes_for :book_authors, allow_destroy: true
   accepts_nested_attributes_for :books, allow_destroy: true
 end
