@@ -16,7 +16,7 @@
       <tr>
         <td><%= link_to book.title, book_path(book) %></td>
         <td><%= book.summary %></td>
-        <td><%=l book.created_at %></td>
+        <td><%= book.created_at.strftime("%B %d at %I:%M %p") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_book_path(book), :class => 'btn btn-mini' %>

@@ -8,17 +8,15 @@
       <th><%= model_class.human_attribute_name(:first_name) %></th>
       <th><%= model_class.human_attribute_name(:last_name) %></th>
       <th><%= model_class.human_attribute_name(:bio) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @authors.each do |author| %>
       <tr>
-        <td><%= author.first_name %></td>
-        <td><%= author.last_name %></td>
+        <td><%= link_to author.first_name, author_path(author) %></td>
+        <td><%= link_to author.last_name, author_path(author) %></td>
         <td><%= link_to author.bio, author_path(author) %></td>
-        <td><%=l author.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_author_path(author), :class => 'btn btn-mini' %>
