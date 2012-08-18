@@ -17,6 +17,7 @@
         <td><%= link_to author.first_name, author_path(author) %></td>
         <td><%= link_to author.last_name, author_path(author) %></td>
         <td><%= link_to author.bio, author_path(author) %></td>
+         <td><%= author.created_at.strftime("%B %d at %I:%M %p") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_author_path(author), :class => 'btn btn-mini' %>
