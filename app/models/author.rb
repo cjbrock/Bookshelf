@@ -6,4 +6,8 @@ class Author < ActiveRecord::Base
 
   accepts_nested_attributes_for :book_authors, allow_destroy: true
   accepts_nested_attributes_for :books, allow_destroy: true
+
+  def full_name
+    "#{self.first_name} #{self.last_name}"
+  end
 end

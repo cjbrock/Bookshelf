@@ -12,6 +12,7 @@ class AuthorsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @author }
+    end
   end
 
   def new
@@ -60,5 +61,4 @@ class AuthorsController < ApplicationController
       format.json { head :no_content }
     end
   end
-end
 end

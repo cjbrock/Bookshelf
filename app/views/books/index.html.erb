@@ -5,11 +5,10 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:first_name) %></th>
-      <th><%= model_class.human_attribute_name(:last_name) %></th>
-      <th><%= model_class.human_attribute_name(:summary) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= "Title" %></th>
+      <th><%= "Author" %></th>
+      <th><%= "Summary" %></th>
+      <th><%= "Date Created" %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -17,8 +16,7 @@
     <% @books.each do |book| %>
       <tr>
         <td><%= link_to book.title, book_path(book) %></td>
-        <td><%= book.author_first_name %></td>
-        <td><%= book.author_last_name %></td>
+        <td><%= book.author_names%></td>
         <td><%= book.summary %></td>
         <td><%= book.created_at.strftime("%B %d at %I:%M %p") %></td>
         <td>
