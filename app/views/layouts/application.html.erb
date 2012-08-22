@@ -53,6 +53,7 @@
                 <li><%= link_to_unless_current "Logout", logout_path %></li>
               <% else %>
                 <li><%= link_to_unless_current "Login", login_path %></li>
+                <li><%= link_to "Sign up!", "/users/new" %></li>
               <% end %>
             </ul>
           </div><!--/.nav-collapse -->
