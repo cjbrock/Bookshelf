@@ -1,10 +1,28 @@
-<%= form_for @book, :html => { :class => 'form-horizontal' } do |f| %>
+<%= nested_form_for @book, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
     <%= f.label :title, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :title, :class => 'text_field' %>
     </div>
   </div>
+
+   
+  <%= f.fields_for :authors do |author_form| %>
+    <div class="control-group">
+      <%= author_form.label :first_name, :class => 'control-label' %>
+      <%= author_form.text_field :first_name, :class => 'text_field' %>
+    </div> 
+    <div class="control-group">
+      <%= author_form.label :last_name, :class => 'control-label' %>
+      <%= author_form.text_field :last_name, :class => 'text_field' %>
+    </div>
+    <div>
+      <%= author_form.link_to_remove "Remove this Author" %>
+    </div>
+    <% end %>
+  <p><%= f.link_to_add "Add an author", :authors %></p>
+  
+
   <div class="control-group">
     <%= f.label :summary, :class => 'control-label' %>
     <div class="controls">

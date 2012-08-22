@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
-  attr_accessible :summary, :title, :book_authors_attributes, :artist_first_name, :artist_last_name, :full_name
+  attr_accessible :summary, :title, :book_authors_attributes, :artist_first_name, :artist_last_name, :authors_attributes
 
 
   has_many :book_authors
