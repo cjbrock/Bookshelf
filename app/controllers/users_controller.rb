@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   skip_before_filter :login_required, :only => [:new, :create]
 
-  #validates_uniqueness_of :email
-
   def new
     @user = User.new
   end
