@@ -6,7 +6,11 @@
     </div>
   </div>
 
-   
+  <div class ="control-group"> 
+   <%= f.label :photo, :class => 'control-label' %> 
+   <%= f.file_field :photo, :class => 'btn' %> 
+ </div>
+ 
   <%= f.fields_for :authors do |author_form| %>
     <div class="control-group">
       <%= author_form.label :first_name, :class => 'control-label' %>
