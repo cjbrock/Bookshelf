@@ -32,8 +32,6 @@ gem 'bcrypt-ruby'
 
 gem "rspec-rails", "~> 2.0"
 
-gem "twitter-bootstrap-rails"
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
