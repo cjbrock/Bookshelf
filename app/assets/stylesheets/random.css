@@ -5,4 +5,30 @@ body {
 h1.liner {
   text-align: center;
   color: #fff;
+  font-size: 350%;
+}
+
+div.cover {
+  display: block;
+  margin: 0 35%;
+}
+
+div.book_title {
+  text-align: center;
+  color: #fff;
+  font-size: 200%;
+}
+
+div.book_author {
+  text-align: center;
+  color: #fff;
+  font-size: 200%;
+}
+
+div.book_summary {
+  text-align: center;
+  color: #fff;
+  font-size: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
