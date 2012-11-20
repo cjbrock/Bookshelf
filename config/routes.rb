@@ -1,14 +1,14 @@
 Bookshelf::Application.routes.draw do
-  get "/login" => 'sessions#new'
-  post "/login" => 'sessions#create'
-  get "/logout" => 'sessions#destroy'
-  post "/sessions" => 'sessions#create'
+  #get "/login" => 'sessions#new'
+  #post "/login" => 'sessions#create'
+  #get "/logout" => 'sessions#destroy'
+  #post "/sessions" => 'sessions#create'
 
-  resources :authors
+  #resources :authors
 
-  resources :books
+  #resources :books
 
-  resources :users
+  #resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

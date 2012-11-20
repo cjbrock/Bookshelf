@@ -10,7 +10,7 @@ h1.liner {
 
 div.cover {
   display: block;
-  margin: 0 35%;
+  margin: 0 39%;
 }
 
 div.book_title {
@@ -28,7 +28,7 @@ div.book_author {
 div.book_summary {
   text-align: center;
   color: #fff;
-  font-size: 100%;
+  font-size: 150%;
   padding-left: 50px;
   padding-right: 50px;
 }
