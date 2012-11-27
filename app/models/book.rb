@@ -14,4 +14,8 @@ class Book < ActiveRecord::Base
     names.to_sentence
   end
 
+  def random
+    #book.select(:id).all.sort_by(rand).first
+  end
+
 end
