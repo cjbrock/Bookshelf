@@ -5,13 +5,17 @@
 </div>
 
 <div class="book_title">
-  <%= Book.first.title %><br/>
+  <%= random_book.title %><br/>
 </div>
 
 <div class="book_author">
-  <%= Book.first.author_names %>
+  <%= random_book.author_names %>
 </div>
 
 <div class="book_summary">
-  <%= Book.first.summary %><br/>
+  <%= random_book.summary %><br/>
+</div>
+
+<div>
+  <%= link_to "Nope. Give me another one.", root_path %>
 </div>

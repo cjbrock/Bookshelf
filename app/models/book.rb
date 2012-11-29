@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
-  attr_accessible :summary, :title, :book_authors_attributes, :author_first_name, :author_last_name, :authors_attributes
+  attr_accessible :summary, :title, :book_authors_attributes, :author_first_name, :author_last_name, :authors_attributes, :cover
 
 
   has_many :book_authors
@@ -8,14 +8,12 @@ class Book < ActiveRecord::Base
   accepts_nested_attributes_for :book_authors, allow_destroy: true
   accepts_nested_attributes_for :authors, allow_destroy: true
 
+  mount_uploader :cover, CoverUploader
+
   def author_names
     names = self.authors.collect(&:full_name)
     return "Anonymous" if names.blank?
     names.to_sentence
-  end
-
-  def random
-    #book.select(:id).all.sort_by(rand).first
   end
 
 end

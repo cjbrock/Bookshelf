@@ -18,5 +18,20 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
-  helper_method :current_user
+  def random_book
+    @random_book ||= get_random_book
+  end
+
+  def get_random_book
+    generate_random_book_array if session[:random_book_ids].blank?
+    book_id = session[:random_book_ids].slice!(0)
+    Book.find(book_id)
+  end
+
+  def generate_random_book_array
+    session[:random_book_ids] = Book.select(:id).all.collect(&:id).sort_by{rand}
+  end
+
+
+  helper_method :current_user, :random_book
 end

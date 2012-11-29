@@ -1,4 +1,8 @@
 class BooksController < ApplicationController
+  def random
+    
+  end
+
   def index
     @books = Book.all
     respond_to do |format|
