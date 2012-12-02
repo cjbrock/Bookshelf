@@ -1,6 +1,6 @@
-body {
+/*body {
   background-image: url('twinkle_twinkle.png');
-}
+}*/
 
 h1.liner {
   text-align: center;
@@ -32,3 +32,4 @@ div.book_summary {
   padding-left: 50px;
   padding-right: 50px;
 }
+
