@@ -1,10 +1,5 @@
-/*body {
-  background-image: url('twinkle_twinkle.png');
-}*/
-
 h1.liner {
   text-align: center;
-  color: #fff;
   font-size: 350%;
 }
 
@@ -15,21 +10,21 @@ div.cover {
 
 div.book_title {
   text-align: center;
-  color: #fff;
   font-size: 200%;
 }
 
 div.book_author {
   text-align: center;
-  color: #fff;
   font-size: 200%;
 }
 
 div.book_summary {
   text-align: center;
-  color: #fff;
   font-size: 150%;
   padding-left: 50px;
   padding-right: 50px;
 }
 
+div.random_link {
+  text-align: center;
+}
