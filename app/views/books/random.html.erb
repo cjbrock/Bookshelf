@@ -1,21 +1,26 @@
-<h1 class="liner">What should I read next?</h1>
+<body>
+    <div>
+      <h1 class="liner">What should I read next?</h1>
+    </div>
+  <div class="gradient">
+    <div class="cover">
+      <%= image_tag random_book.cover.to_s %>
+    </div>
 
-<div class="cover">
-  <%= image_tag random_book.cover.to_s %>
-</div>
+    <div class="book_title">
+      <%= random_book.title %><br/>
+    </div>
 
-<div class="book_title">
-  <%= random_book.title %><br/>
-</div>
+    <div class="book_author">
+      <%= random_book.author_names %>
+    </div>
 
-<div class="book_author">
-  <%= random_book.author_names %>
-</div>
+    <div class="book_summary">
+      <%= random_book.summary %><br/>
+    </div>
 
-<div class="book_summary">
-  <%= random_book.summary %><br/>
-</div>
-
-<div class="random_link">
-  <%= link_to "Nope. Give me another one.", root_path %>
-</div>
+    <div class="random_link">
+      <%= link_to "Nope. Give me another one.", root_path %>
+    </div>
+  </div>
+</body>

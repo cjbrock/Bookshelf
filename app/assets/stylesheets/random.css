@@ -5,7 +5,8 @@ h1.liner {
 
 div.cover {
   display: block;
-  margin: 0 39%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 div.book_title {
@@ -27,4 +28,5 @@ div.book_summary {
 
 div.random_link {
   text-align: center;
+
 }
