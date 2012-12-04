@@ -24,9 +24,10 @@ div.book_summary {
   font-size: 150%;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 20px;
 }
 
-div.random_link {
+div.random_link, div.right {
   text-align: center;
-
+  padding-bottom: 20px;
 }

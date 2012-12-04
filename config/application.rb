@@ -11,6 +11,8 @@ end
 
 module Bookshelf
   class Application < Rails::Application
+    config.action_mailer.delivery_method   = :postmark
+    config.action_mailer.postmark_settings = { api_key: "33ad43c3-bfeb-4d43-8183-c597149c293b" }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

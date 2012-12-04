@@ -1,5 +1,6 @@
-<script type="text/javascript">
+<h4 id="notice"><%=notice %></h4>
 
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-36772878-1']);
   _gaq.push(['_trackPageview']);
@@ -9,14 +10,12 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 
 <body>
-    <div>
+    <header>
       <h1 class="liner">What should I read next?</h1>
-    </div>
-  <div class="gradient">
+    </header>
     <div class="cover">
       <%= image_tag random_book.cover.to_s %>
     </div>
@@ -36,5 +35,7 @@
     <div class="random_link">
       <%= link_to "Nope. Give me another one.", root_path %>
     </div>
-  </div>
+    <div class="right">
+      <%= link_to "Got a suggestion?", messages_path %>
+    </div>
 </body>

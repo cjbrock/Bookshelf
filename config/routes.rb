@@ -5,6 +5,9 @@ Bookshelf::Application.routes.draw do
   #post "/sessions" => 'sessions#create'
 
   #resources :authors
+  get "/messages" => 'messages#new'
+  post "/messages" =>'messages#create'
+
 
   resources :books
 

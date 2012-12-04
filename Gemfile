@@ -28,11 +28,14 @@ end
 
 gem 'jquery-rails'
 
+gem 'active_attr'
+
 gem 'thin'
 
 gem 'nested_form'
 
 gem 'bcrypt-ruby'
+gem 'postmark-rails', '0.4.1'
 
 gem "rspec-rails", "~> 2.0"
 
