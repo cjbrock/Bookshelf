@@ -11,4 +11,7 @@
  *= require_self
  *= require_tree .
  */
-
+html {
+  background-image: url('dark_leather.png');
+  background-color: black;
+}

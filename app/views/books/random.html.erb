@@ -1,5 +1,6 @@
 <h4 id="notice"><%=notice %></h4>
-
+<head>
+<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One|Gafata' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-36772878-1']);
@@ -11,31 +12,37 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
+</head>
 <body>
+  <div>
     <header>
       <h1 class="liner">What should I read next?</h1>
     </header>
-    <div class="cover">
-      <%= image_tag random_book.cover.to_s %>
-    </div>
-
-    <div class="book_title">
-      <%= random_book.title %><br/>
-    </div>
-
-    <div class="book_author">
-      <%= random_book.author_names %>
-    </div>
-
-    <div class="book_summary">
-      <%= random_book.summary %><br/>
-    </div>
-
-    <div class="random_link">
-      <%= link_to "Nope. Give me another one.", root_path %>
-    </div>
-    <div class="right">
-      <%= link_to "Got a suggestion?", messages_path %>
-    </div>
+      <div style="clear: both;"></div>
+      <div class="container">
+        <div class="cover_surround">
+          <div class="cover">
+            <%= image_tag random_book.cover.to_s %>
+          </div>
+        </div>
+        <div class="book_info">
+          <div class="book_title">
+            <%= random_book.title %><br/>
+          </div>
+          <div class="book_author">
+            <%= random_book.author_names %>
+          </div>
+          <div class="book_summary">
+            <%= random_book.summary %><br/>
+          </div>
+      </div>
+      <div style="clear: both;"></div>
+          <div class="random_link">
+            <%= link_to "Nope. Give me another one.", root_path %>
+          </div>
+          <div class="random_link">
+            <%= link_to "Got a suggestion?", messages_path %>
+          </div>
+        </div>
+  </div>
 </body>

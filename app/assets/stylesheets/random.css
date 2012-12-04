@@ -1,6 +1,23 @@
-h1.liner {
+#notice {
+  color:#ebc48a;
+}
+
+header {
   text-align: center;
-  font-size: 350%;
+  font-size: 200%;
+  color:#b37a51;
+  font-family: 'Julius Sans One', sans-serif;
+}
+div.container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.cover_surround {
+  float: left;
+  width: 400px;
+  height: 400px;
 }
 
 div.cover {
@@ -9,25 +26,46 @@ div.cover {
   text-align: center;
 }
 
-div.book_title {
+div.book_info {
+  float:right;
+  width: 500px;
+  height: 400px;
+}
+
+div.book_title, div.book_author{
   text-align: center;
   font-size: 200%;
+  color: #f2be6f;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 div.book_author {
-  text-align: center;
-  font-size: 200%;
+  padding-bottom: 20px;
 }
+
 
 div.book_summary {
   text-align: center;
   font-size: 150%;
+  color: #b37a51 ;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
+  font-family: 'Gafata', sans-serif;
 }
 
 div.random_link, div.right {
-  text-align: center;
+  padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+div.random_link a, div.right a{
+  color: #f2be6f;
+}
+
+div.random_link:hover a, div.right:hover a{
+  color: #ebc48a;
 }
