@@ -50,4 +50,4 @@ gem "rspec-rails", "~> 2.0"
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'

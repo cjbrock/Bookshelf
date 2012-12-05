@@ -23,9 +23,13 @@ class ApplicationController < ActionController::Base
   end
 
   def get_random_book
-    generate_random_book_array if session[:random_book_ids].blank?
-    book_id = session[:random_book_ids].slice!(0)
-    Book.find(book_id)
+    book = nil
+    while book.nil?
+      generate_random_book_array if session[:random_book_ids].blank?
+      book_id = session[:random_book_ids].slice!(0)
+      book = Book.find_by_id(book_id)
+    end
+    book
   end
 
   def generate_random_book_array
