@@ -40,22 +40,25 @@
       <div class="random_link">
           <%= link_to "Nope. Give me another one.", root_path %>
       </div>
-      <div style="display:none">
-        <%= form_for Message.new do |f| %>
-          <div class="field white">
-            <%= f.label :title %><br />
-            <%= f.text_field :title, :class => 'submittable' %>
-          </div>
-          <div class="field white">
-            <%= f.label :author %><br />
-            <%= f.text_field :author, :class => 'submittable' %>
-          </div>
-          <div class="field white">
-            <%= f.label :summary %>: <i>Make it short and vaguely snarky, please!</i></br>
-            <%= f.text_area :summary, :class => 'submittable', :rows => 4 %>
-          </div>
-          <div class="actions"><%= f.submit "You know you want to." %></div>
-        <% end %>
+      <div class="modal_fun">
+        <%= link_to "this will eventually pop up the modal", messages_path %>
+        <div style="display:none">
+          <%= form_for Message.new do |f| %>
+            <div class="field white">
+              <%= f.label :title %><br />
+              <%= f.text_field :title, :class => 'submittable' %>
+            </div>
+            <div class="field white">
+              <%= f.label :author %><br />
+              <%= f.text_field :author, :class => 'submittable' %>
+            </div>
+            <div class="field white">
+              <%= f.label :summary %>: <i>Make it short and vaguely snarky, please!</i></br>
+              <%= f.text_area :summary, :class => 'submittable', :rows => 4 %>
+            </div>
+            <div class="actions"><%= f.submit "You know you want to." %></div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

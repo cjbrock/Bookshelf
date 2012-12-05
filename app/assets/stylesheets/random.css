@@ -54,7 +54,7 @@ div.book_summary {
   font-family: 'Gafata', sans-serif;
 }
 
-div.random_link, div.right {
+div.random_link, div.modal_fun {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -62,10 +62,10 @@ div.random_link, div.right {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-div.random_link a, div.right a{
+div.random_link a, div.modal_fun a{
   color: #f2be6f;
 }
 
-div.random_link:hover a, div.right:hover a{
+div.random_link:hover a, div.modal_fun:hover a{
   color: #ebc48a;
 }
