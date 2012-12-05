@@ -69,3 +69,13 @@ div.random_link a, div.modal_fun a{
 div.random_link:hover a, div.modal_fun:hover a{
   color: #ebc48a;
 }
+
+.simplemodal-overlay {
+   background-color: black;
+}
+
+.simplemodal-container {
+  background-image: url('dark_leather.png');
+  background-color: black;
+  padding: 20px;
+}

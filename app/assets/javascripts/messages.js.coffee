@@ -1,6 +1,5 @@
 $ ->
-  alert("i'm here bitches")
-  $("body").on 'click', '#modal_link', popModal
+  $("#modal_link").on 'click', popModal
 popModal = (event) ->
   event.preventDefault()
-  alert("you clicked me…it felt so good")
+  $("#modal_fun").modal({overlayClose:true})

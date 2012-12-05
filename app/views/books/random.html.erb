@@ -40,9 +40,13 @@
       <div class="random_link">
           <%= link_to "Nope. Give me another one.", root_path %>
       </div>
-      <%= link_to "this will eventually pop up the modal", id: "modal_link" %>
+      <%= link_to "this will eventually pop up the modal", '#', id: "modal_link" %>
         <div id="modal_fun" style="display:none">
           <%= form_for Message.new do |f| %>
+            <h1 class="white">Suggest a Book</h1>
+            <div class="white">
+              <p>If you wimp out, click outside the box to close</p>
+            </div>
             <div class="field white">
               <%= f.label :title %><br />
               <%= f.text_field :title, :class => 'submittable' %>
