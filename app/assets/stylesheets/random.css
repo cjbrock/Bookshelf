@@ -51,7 +51,8 @@ div.book_summary {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
-  font-family: 'Gafata', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
 }
 
 div.random_link, div.modal_fun, #modal_link {
