@@ -1,6 +1,10 @@
 class BooksController < ApplicationController
   def random
-    
+
+  end
+
+  def give_another_recommendation
+
   end
 
   def index

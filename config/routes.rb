@@ -9,7 +9,11 @@ Bookshelf::Application.routes.draw do
   post "/messages" =>'messages#create'
 
 
-  resources :books
+  resources :books do
+    collection do
+      get :give_another_recommendation
+    end
+  end
 
   #resources :users
 
