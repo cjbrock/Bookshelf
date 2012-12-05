@@ -54,7 +54,7 @@ div.book_summary {
   font-family: 'Gafata', sans-serif;
 }
 
-div.random_link, div.modal_fun {
+div.random_link, div.modal_fun, #modal_link {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -62,11 +62,11 @@ div.random_link, div.modal_fun {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-div.random_link a, div.modal_fun a{
+div.random_link a, div.modal_fun a, #modal_link{
   color: #f2be6f;
 }
 
-div.random_link:hover a, div.modal_fun:hover a{
+div.random_link:hover a, div.modal_fun:hover a, #modal_link:hover{
   color: #ebc48a;
 }
 
@@ -78,4 +78,5 @@ div.random_link:hover a, div.modal_fun:hover a{
   background-image: url('dark_leather.png');
   background-color: black;
   padding: 20px;
+  border:4px solid #b37a51;
 }
