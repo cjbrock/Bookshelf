@@ -59,6 +59,10 @@
               <%= f.label :summary %>: <i>Make it short and vaguely snarky, please!</i></br>
               <%= f.text_area :summary, :class => 'submittable', :rows => 4 %>
             </div>
+              <div class="field white">
+              <%= f.label :suggested_by %><br />
+              <%= f.text_field :suggested_by, :class => 'submittable' %>
+            </div>
             <div class="actions"><%= f.submit "You know you want to." %></div>
           <% end %>
       </div>

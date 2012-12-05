@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
       BookSuggestionMailer.book_suggestion(@message).deliver
       redirect_to root_url, notice: "Suggestion received! We may use it if it doesn't suck."
     else
-      render "new"
+      redirect_to root_url, notice: "Please fill out the whole form. Like, everything. Even your name."
     end
   end
 end
