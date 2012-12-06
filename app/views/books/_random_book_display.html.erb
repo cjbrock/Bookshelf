@@ -1,0 +1,16 @@
+<div class="cover_surround">
+  <div class="cover">
+    <%= image_tag random_book.cover.to_s if random_book.cover%>
+  </div>
+</div>
+<div class="book_info">
+  <div class="book_title">
+    <%= random_book.title %><br/>
+  </div>
+  <div class="book_author">
+    <%= random_book.author_names %>
+  </div>
+  <div class="book_summary">
+    <%= random_book.summary %><br/>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+$("#random_book_container").slideUp('slow', function(){
+  $("#random_book_container").html("<%= escape_javascript(render 'random_book_display') %>").slideDown('slow');
+});
