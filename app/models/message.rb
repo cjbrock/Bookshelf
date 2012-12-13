@@ -6,7 +6,7 @@ class Message
   attribute :summary
   attribute :suggested_by
 
-  attr_accessible :title, :author, :summary
+  attr_accessible :title, :author, :summary, :suggested_by
   
   validates_presence_of :title
   validates_presence_of :author
