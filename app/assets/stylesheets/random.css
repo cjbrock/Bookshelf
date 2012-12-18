@@ -1,15 +1,16 @@
 #notice {
   color:#ebc48a;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
 }
 
-header {
+h1 {
   text-align: center;
-  font-size: 200%;
+  font-size: 400%;
   color:#b37a51;
-  font-family: 'Josefin Sans', sans-serif;
-  text-shadow: -1px -1px 2px rgb(202,149,81);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  text-shadow: -1px -1px 2px rgb(246,229,182);
 }
 div.container {
   width: 900px;
@@ -40,11 +41,12 @@ div.book_title, div.book_author{
   text-align: center;
   font-size: 200%;
   color: #f2be6f;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 div.book_author {
   padding-bottom: 20px;
+  font-style: italic;
 }
 
 
@@ -55,16 +57,16 @@ div.book_summary {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
 }
 
-div.random_link, div.modal_fun, #modal_link, #rlink {
+div.random_link, div.modal_fun {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   font-size: 30px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 div.random_link a, div.modal_fun a {
@@ -96,32 +98,35 @@ a#modal_link.button, a#rlink.button {
   color:#290f00;
 }
 
+#modal_link, #rlink {
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 30px;
+}
+
 .button {
   -moz-box-shadow:inset 0px 1px 0px 0px #fcf8f2;
   -webkit-box-shadow:inset 0px 1px 0px 0px #fcf8f2;
   box-shadow:inset 0px 1px 0px 0px #fcf8f2;
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fae4bd), color-stop(1, #eac380) );
-  background:-moz-linear-gradient( center top, #fae4bd 5%, #eac380 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae4bd', endColorstr='#eac380');
-  background-color:#fae4bd;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eac380), color-stop(1, #fae4bd) );
+  background:-moz-linear-gradient( center top, #eac380 5%, #fae4bd 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eac380', endColorstr='#fae4bd');
+  background-color:#eac380;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
   border-radius:6px;
   border:1px solid #290e00;
   display:inline-block;
   color:#290f00;
-  font-family:arial;
-  font-size:15px;
-  font-weight:bold;
-  padding:6px 24px;
+  font-family: 'Titillium Web', sans-serif;
   text-decoration:none;
   text-shadow:1px 1px 0px #cc9f52;
 }
 .button:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eac380), color-stop(1, #fae4bd) );
-  background:-moz-linear-gradient( center top, #eac380 5%, #fae4bd 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eac380', endColorstr='#fae4bd');
-  background-color:#eac380;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fae4bd), color-stop(1, #eac380) );
+  background:-moz-linear-gradient( center top, #fae4bd 5%, #eac380 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae4bd', endColorstr='#eac380');
+  background-color:#fae4bd;
 }
 .button:active {
   position:relative;
