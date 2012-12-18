@@ -26,10 +26,10 @@
       </div>
       <div style="clear: both;"></div>
       <div class="random_link">
-          <%= link_to "Nope. Give me another one.", root_path %>
+          <%= link_to "Nope. Give me another one.", root_path, :class => "button", id: "rlink" %>
       </div>
       <div class="random_link">
-      <%= link_to "Suggest a Book", '#', id: "modal_link" %>
+      <%= link_to "Suggest a Book", '#', id: "modal_link", :class => "button" %>
         <div id="modal_fun" style="display:none">
           <%= form_for Message.new do |f| %>
             <h1 class="white">Suggest a Book</h1>
@@ -52,7 +52,7 @@
               <%= f.label :suggested_by %><br />
               <%= f.text_field :suggested_by, :class => 'submittable' %>
             </div>
-            <div class="actions"><%= f.submit "You know you want to." %></div>
+            <div class="actions"><%= f.submit "You know you want to.", :class => "button" %></div>
           <% end %>
         </div>
       </div>
