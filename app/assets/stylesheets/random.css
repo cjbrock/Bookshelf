@@ -1,6 +1,6 @@
 #notice {
   color:#ebc48a;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
 }
 
@@ -8,7 +8,7 @@ header {
   text-align: center;
   font-size: 200%;
   color:#b37a51;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-shadow: -1px -1px 2px rgb(202,149,81);
 }
 div.container {
@@ -40,7 +40,7 @@ div.book_title, div.book_author{
   text-align: center;
   font-size: 200%;
   color: #f2be6f;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 div.book_author {
@@ -55,8 +55,8 @@ div.book_summary {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 200;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
 }
 
 div.random_link, div.modal_fun, #modal_link, #rlink {
@@ -64,7 +64,7 @@ div.random_link, div.modal_fun, #modal_link, #rlink {
   padding-bottom: 20px;
   text-align: center;
   font-size: 30px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 div.random_link a, div.modal_fun a {
@@ -73,6 +73,10 @@ div.random_link a, div.modal_fun a {
 
 div.random_link:hover a, div.modal_fun:hover a {
   color: #ebc48a;
+}
+
+span.italic {
+  font-style: italic;
 }
 
 .simplemodal-overlay {
