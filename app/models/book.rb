@@ -15,5 +15,4 @@ class Book < ActiveRecord::Base
     return "Anonymous" if names.blank?
     names.to_sentence
   end
-
 end

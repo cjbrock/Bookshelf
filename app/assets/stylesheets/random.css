@@ -21,6 +21,8 @@ div.cover_surround {
   float: left;
   width: 400px;
   height: 400px;
+  background-image: url(book_covers/1.jpg);
+  background-repeat: no-repeat;
 }
 
 div.cover {
